@@ -10,8 +10,14 @@
 </head>
 
 <body <?php body_class(); ?>>
+<div id="front-page-pic"></div>
     <div class="container">
         <header class="site-header">
-            <h1><?php bloginfo('name'); ?></h1>
+            <div class="header-icon">
+            <a href="<?php echo home_url(); ?>"><img src="<?php site_icon_url(); ?>" alt="midgards door"></a>
+                <div class="header-title">
+                    <h1><a href="<?php echo home_url(); ?>"><?php bloginfo( 'name' ); ?></a></h1>
+                </div>
+            </div>
             <?php wp_nav_menu(['theme_location' => 'primary', 'container' => 'nav']); ?>
         </header>

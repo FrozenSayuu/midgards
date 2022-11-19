@@ -32,6 +32,3 @@ $result = new WP_Query($post_query); ?>
 </div>
 
 <?php wp_footer(); ?>
-</body>
-
-</html>

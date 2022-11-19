@@ -2,31 +2,65 @@ h1 {
   color: red;
 }
 
-.container {
-  margin: 24px;
+body {
+  background-color: rgb(130, 20, 20) !important;
 }
 
-@media (min-width: 900px) {
-  .container {
-    margin: 96px;
-    margin-right: 0;
-    margin-left: 0;
-  }
-}
 .news-heading {
   margin: 5rem 0 5rem;
+  padding-bottom: 10px;
+  display: inline-block;
+  border-bottom: 3px solid rgb(232, 232, 232);
 }
 
 .news-grid img {
   width: 100%;
   height: auto;
 }
+.news-grid .news-grid-card {
+  background-color: white;
+}
+.news-grid .news-grid-card a {
+  text-decoration: none;
+  color: black;
+}
+.news-grid .news-grid-card .card-title {
+  padding-bottom: 10px;
+  border-bottom: 3px solid black;
+  display: inline-block;
+  margin: 15px;
+}
+.news-grid .news-grid-card img {
+  margin: 15px 0px 15px;
+  padding: 0px 15px;
+}
+.news-grid .news-grid-card p {
+  padding: 15px;
+}
+.news-grid .card-date-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px;
+}
+.news-grid .card-date-link .card-date, .news-grid .card-date-link .card-read-more {
+  font-size: 14px;
+}
+.news-grid .card-date-link .card-read-more {
+  background-color: rgb(220, 220, 220);
+  border-radius: 3px;
+  padding: 5px;
+}
+.news-grid .card-date-link .card-read-more:hover {
+  background-color: rgb(67, 67, 67);
+  color: white;
+}
 
 @media (min-width: 600px) {
   .news-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 3rem;
+    gap: 2rem;
   }
   .news-grid img {
     width: 100%;
@@ -37,7 +71,7 @@ h1 {
   .news-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 3rem;
+    gap: 2rem;
   }
   .news-grid img {
     width: 100%;

@@ -1,4 +1,8 @@
 
+@import '../general/responsive';
+@import '../general/default';
+@import '../general/colors';
+
 .news-heading {
     margin: 5rem 0 5rem;
 }
@@ -11,7 +15,7 @@
     }
 }
 
-@media (min-width: 600px) {
+@media (min-width: $tablet) {
     .news-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -24,7 +28,7 @@
       }
     }
 
-@media (min-width: 900px) {
+@media (min-width: $tablet-landscape) {
 .news-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

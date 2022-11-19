@@ -17,13 +17,19 @@ $result = new WP_Query($post_query); ?>
 
             <?php while ($result->have_posts()) : $result->the_post(); ?>
                 <div class="news-grid-card">
-                    <h2><?php the_title(); ?></h2>
+                    <a href="<?php the_permalink(); ?>">
+                        <h2 class="card-title"><?php the_title(); ?></h2>
+                    </a>
                     <?php if (!empty(get_the_post_thumbnail())) { ?>
                         <?php the_post_thumbnail('midgards-gallery'); ?>
                     <?php } else { ?>
                         <p>ingen bild</p>
                     <?php } ?>
-                    <p> <?php the_excerpt(); ?></p>
+                    <?php the_excerpt(); ?>
+                    <div class="card-date-link">
+                        <span class="card-date"> <?php the_date(); ?></span>
+                        <a class="card-read-more" href="<?php the_permalink(); ?>">Läs mer</a>
+                    </div>
                 </div>
             <?php endwhile; ?>
 

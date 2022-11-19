@@ -1,0 +1,38 @@
+
+.news-heading {
+    margin: 5rem 0 5rem;
+}
+
+.news-grid {
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (min-width: 600px) {
+    .news-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+    
+        img {
+            width: 100%;
+            height: auto;
+        }
+      }
+    }
+
+@media (min-width: 900px) {
+.news-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+  }
+}

@@ -2,6 +2,17 @@ h1 {
   color: red;
 }
 
+.container {
+  margin: 24px;
+}
+
+@media (min-width: 900px) {
+  .container {
+    margin: 96px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
 .news-heading {
   margin: 5rem 0 5rem;
 }

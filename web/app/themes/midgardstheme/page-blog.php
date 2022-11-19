@@ -7,32 +7,31 @@
 );
 $result = new WP_Query($post_query); ?>
 
-<!DOCTYPE html>
-<html lang="en">
+<?php get_header(); ?>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+<div class="news-content">
+    <h1 class="news-heading">Blogg</h1>
+    <div class="news-grid">
 
-<body>
-    <div class="news-content">
-        <h1>Blogg</h1>
-        <div class="news-grid">
-            <?php if ($result->have_posts()) : ?>
-                <div class="news-grid-card"> <?php while ($result->have_posts()) : $result->the_post(); ?>
-                        <h2><?php the_title(); ?></h2>
-                    <?php endwhile; ?>
+        <?php if ($result->have_posts()) : ?>
+
+            <?php while ($result->have_posts()) : $result->the_post(); ?>
+                <div class="news-grid-card">
+                    <h2><?php the_title(); ?></h2>
+                    <?php if (!empty(get_the_post_thumbnail())) { ?>
+                        <?php the_post_thumbnail('midgards-gallery'); ?>
+                    <?php } else { ?>
+                        <p>ingen bild</p>
+                    <?php } ?>
+                    <p> <?php the_excerpt(); ?></p>
                 </div>
-            <?php endif; ?>
-        </div>
+            <?php endwhile; ?>
+
+        <?php endif; ?>
     </div>
+</div>
 
-
-
-    <?php wp_footer(); ?>
+<?php wp_footer(); ?>
 </body>
 
 </html>

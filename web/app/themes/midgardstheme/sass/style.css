@@ -147,7 +147,7 @@ body {
   line-height: 1.6rem;
 }
 .single-post-content .single-post-title {
-  padding-bottom: 1rem;
+  padding-bottom: 0.5rem;
   border-bottom: solid;
   display: inline;
 }

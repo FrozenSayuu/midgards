@@ -27,7 +27,7 @@ $result = new WP_Query($post_query); ?>
                     <?php } ?>
                     <?php the_excerpt(); ?>
                     <div class="card-date-link">
-                        <span class="card-date"> <?php the_date(); ?></span>
+                        <span class="card-date"> <?php echo get_the_date('Y-m-d'); ?></span>
                         <a class="card-read-more" href="<?php the_permalink(); ?>">Läs mer</a>
                     </div>
                 </div>

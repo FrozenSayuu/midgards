@@ -15,6 +15,7 @@
         <div class="single-post-description">
             <?php the_content(); ?>
         </div>
+        <span class="card-date"> <?php echo get_the_date('Y-m-d'); ?></span>
     </div>
 </div>
 <?php wp_footer(); ?>

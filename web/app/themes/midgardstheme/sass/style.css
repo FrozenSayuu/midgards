@@ -133,4 +133,29 @@ body {
     width: 100%;
     height: auto;
   }
+}
+.single-post-content {
+  display: flex;
+  flex-direction: column;
+  margin: 5rem;
+}
+.single-post-content .single-post-text {
+  background-color: rgb(11, 44, 65);
+  color: rgb(226, 226, 226);
+  margin-top: 3rem;
+  padding: 2rem;
+  line-height: 1.6rem;
+}
+.single-post-content .single-post-title {
+  padding-bottom: 1rem;
+  border-bottom: solid;
+  display: inline;
+}
+.single-post-content .single-post-description {
+  margin-top: 2rem;
+}
+.single-post-content .single-post-image img {
+  width: 100%;
+  height: auto;
+  border: solid 3px rgb(11, 44, 65);
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,62 @@
+.site-footer {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(72, 103, 123, 1);
+    justify-content: space-around;
+    padding: 20px 0 20px 0;
+    color: #d5d5d5; 
+
+    .footer-midgard {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+
+    }
+
+    .footer-halsocenter ,   .footer-byggteknik{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+
+      span {
+        color: #d5d5d5; 
+      }
+    }
+
+    .footer-social {
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px;
+    }
+
+    .footer-contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        button {
+            border-radius: 10px;
+            border-style: none;
+            background-color: rgba(21, 94, 140, 1);
+            padding: 10px 15px;
+            outline: none;
+
+            a{
+                color: #d5d5d5; 
+                text-decoration: none;
+            }
+
+            ul{
+                list-style-type: none;
+                padding: 0;
+                margin: auto;
+            }
+        }
+
+        button:hover {
+            background-color: rgb(4, 31, 48);
+        }
+    }
+
+
+}

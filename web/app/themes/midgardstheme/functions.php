@@ -78,7 +78,7 @@ if (!function_exists('midgardstheme_setup')) :
 
     function mg_custom_excerpt_length()
     {
-        return 20;
+        return 5;
     }
     add_filter('excerpt_length', 'mg_custom_excerpt_length', 999);
 

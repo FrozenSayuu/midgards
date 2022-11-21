@@ -23,7 +23,7 @@ $result = new WP_Query($post_query); ?>
                     <?php if (!empty(get_the_post_thumbnail())) { ?>
                         <?php the_post_thumbnail('midgards-gallery'); ?>
                     <?php } else { ?>
-                        <p>ingen bild</p>
+                        <img src="/app/uploads/placeholder_no_image.png" alt="placeholder for no image found">
                     <?php } ?>
                     <?php the_excerpt(); ?>
                     <div class="card-date-link">

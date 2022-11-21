@@ -152,7 +152,7 @@ body {
   display: inline;
 }
 .single-post-content .single-post-description {
-  margin-top: 2rem;
+  margin: 2rem 0 2rem;
 }
 .single-post-content .single-post-image img {
   width: 100%;

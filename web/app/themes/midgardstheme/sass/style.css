@@ -21,6 +21,7 @@ body {
   background-color: rgb(236, 228, 228);
   display: flex;
   flex-direction: column;
+  border-radius: 5px;
 }
 .news-grid .news-grid-card a {
   text-decoration: none;

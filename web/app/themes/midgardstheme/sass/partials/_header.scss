@@ -4,6 +4,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: 2fr 1fr;
     text-align: center;
+    padding-top: 1rem;
 }
 
 .header-icon img
@@ -45,14 +46,4 @@
 {
     text-decoration: underline;
     color: black;
-}
-
-#front-page-pic
-{
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    z-index: -1;
-    background: linear-gradient(to top, rgba(128, 128, 128, 0.232), rgba(128, 128, 128, 0.232)), url(http://midgards.test/app/uploads/2022/11/IMG_7715.jpeg) no-repeat top center;
-    box-shadow: inset 0 0 99999px rgba(63, 63, 63, 0.496);
 }

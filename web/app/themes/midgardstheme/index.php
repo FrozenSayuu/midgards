@@ -1,11 +1,29 @@
 <?php get_header(); ?>
 
-<div class="frontpage-cont">
-    <h1>Mytologin bakom Midgård</h1>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia quidem, maxime modi voluptatibus, minima possimus ea doloribus dolorem enim eaque quos ducimus, harum eum soluta consectetur suscipit aliquam quis iste.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum exercitationem totam eligendi asperiores hic iste voluptates, voluptatibus voluptas sequi quasi iure! Non nihil sunt magni molestiae fugit consequuntur at dignissimos.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis aspernatur accusantium voluptates eligendi ex et, doloribus saepe quaerat corporis eos!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, facilis vitae repudiandae obcaecati modi deserunt laudantium, ad et at distinctio ratione est placeat voluptates quibusdam asperiores dolore aut pariatur accusantium!</p>
-</div>
+<?php
+	if ( have_posts() ) :
+		while ( have_posts() ) : the_post(); ?>
+			<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+
+				<?php
+				if( get_the_post_thumbnail() ) : ?>
+					<div id="our-post-image">
+						<?php the_post_thumbnail('midgards-gallery'); ?>
+					</div>
+				<?php
+				endif; 
+				the_content(); ?>
+			</article>
+		<?php
+		endwhile;
+
+		if ( is_single() ) :
+			previous_post_link();
+			next_post_link();
+		endif;
+	else :
+		_e( 'Oj hoppsan, här var det tomt.', 'textdomain' );
+	endif;
+	?>
 
 <?php get_footer(); ?>

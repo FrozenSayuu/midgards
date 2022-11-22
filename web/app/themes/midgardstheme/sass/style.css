@@ -3,6 +3,7 @@
   grid-template-columns: 1fr;
   grid-template-rows: 2fr 1fr;
   text-align: center;
+  padding-top: 1rem;
 }
 
 .header-icon img {
@@ -27,6 +28,7 @@
   align-items: center;
   background-color: rgba(58, 58, 58, 0.65);
   height: 3rem;
+  font-weight: 600;
 }
 
 #menu-main a {
@@ -37,19 +39,6 @@
 #menu-main a:hover {
   text-decoration: underline;
   color: black;
-}
-
-#front-page-pic {
-  width: 100%;
-  height: 100vh;
-  position: absolute;
-  z-index: -1;
-  background: linear-gradient(to top, rgba(128, 128, 128, 0.232), rgba(128, 128, 128, 0.232)), url(http://midgards.test/app/uploads/2022/11/7616CD63-94C7-4EA8-B551-C33673606816.jpeg) no-repeat top center;
-}
-
-#front-page-pic img {
-  width: 100%;
-  height: 100%;
 }
 
 body {
@@ -183,4 +172,23 @@ body {
 }
 .site-footer .footer-contact button:hover {
   background-color: rgb(4, 31, 48);
+}
+
+#front-page-pic {
+  width: 100%;
+  height: 300vh;
+  position: absolute;
+  z-index: -1;
+  background: linear-gradient(to top, rgba(128, 128, 128, 0.232), rgba(128, 128, 128, 0.232)), url(http://midgards.test/app/uploads/2022/11/IMG_7715.jpeg) no-repeat top center;
+  box-shadow: inset 0 0 99999px rgba(63, 63, 63, 0.496);
+}
+
+.frontpage-cont {
+  text-decoration: none;
+  background-color: rgba(58, 58, 58, 0.65);
+  color: black;
+  margin: auto;
+  padding: 1rem;
+  width: 80ch;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */

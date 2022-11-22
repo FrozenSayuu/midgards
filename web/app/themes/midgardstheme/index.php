@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 
+<div class="index">
 <?php
 	if ( have_posts() ) :
 		while ( have_posts() ) : the_post(); ?>
@@ -25,5 +26,6 @@
 		_e( 'Oj hoppsan, här var det tomt.', 'textdomain' );
 	endif;
 	?>
+</div>
 
 <?php get_footer(); ?>

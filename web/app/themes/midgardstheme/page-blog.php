@@ -37,4 +37,4 @@ $result = new WP_Query($post_query); ?>
     </div>
 </div>
 
-<?php wp_footer(); ?>
+<?php get_footer(); ?>

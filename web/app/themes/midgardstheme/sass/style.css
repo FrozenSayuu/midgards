@@ -123,6 +123,10 @@ body {
     height: auto;
   }
 }
+.kontakt-midgard {
+  color: white;
+}
+
 .site-footer {
   display: flex;
   flex-direction: row;

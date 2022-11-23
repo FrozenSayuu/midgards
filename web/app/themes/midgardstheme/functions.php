@@ -34,11 +34,11 @@ if (!function_exists('midgardstheme_setup')) :
             'default-image'          => '',
             'default-repeat'         => '',
             'default-position-x'     => '',
-            'wp-head-callback'       => '',
+            'wp-head-callback'       => '_custom_background_cb',
             'admin-head-callback'    => '',
             'admin-preview-callback' => '',
         ];
-        //add_theme_support( 'custom-background', $background_args );
+        add_theme_support( 'custom-background', $background_args );
 
         // Add theme support for Custom Header
         $header_args = [

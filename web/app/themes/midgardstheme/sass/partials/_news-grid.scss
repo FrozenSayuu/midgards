@@ -13,6 +13,7 @@ body {
     border-bottom: 3px solid rgb(232, 232, 232);
 }
 .news-grid {
+    margin-bottom: 3rem;
     img {
         width: 100%;
         height: auto;
@@ -23,6 +24,7 @@ body {
         display: flex;
         flex-direction: column;
         border-radius: 5px;
+        margin: 1rem 0 1rem;
 
         a {
             text-decoration: none;

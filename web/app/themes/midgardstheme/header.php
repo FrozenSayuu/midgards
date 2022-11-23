@@ -10,7 +10,6 @@
 </head>
 
 <body <?php body_class(); ?>>
-    <div id="front-page-pic"></div>
     <div class="container">
         <header class="site-header">
             <div class="header-icon">

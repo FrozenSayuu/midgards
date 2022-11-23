@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <div class="contact">
-<?php
+    <?php
 	if ( have_posts() ) :
 		while ( have_posts() ) : the_post();
 				if( get_the_post_thumbnail() ) : ?>

@@ -38,7 +38,7 @@ if (!function_exists('midgardstheme_setup')) :
             'admin-head-callback'    => '',
             'admin-preview-callback' => '',
         ];
-        add_theme_support( 'custom-background', $background_args );
+        add_theme_support('custom-background', $background_args);
 
         // Add theme support for Custom Header
         $header_args = [
@@ -64,7 +64,7 @@ if (!function_exists('midgardstheme_setup')) :
         // Add theme support for Translation
 
         add_image_size('midgards-gallery', '500', '300', true);
-    }
+        }
 
     add_action('after_setup_theme', 'midgardstheme_setup');
 
@@ -81,6 +81,5 @@ if (!function_exists('midgardstheme_setup')) :
         return 5;
     }
     add_filter('excerpt_length', 'mg_custom_excerpt_length', 999);
-
-
+       
 endif;

@@ -42,7 +42,7 @@
 }
 
 body {
-  background-color: rgb(130, 20, 20) !important;
+  background-color: rgb(255, 255, 255) !important;
 }
 
 .news-heading {
@@ -176,6 +176,10 @@ body {
 }
 .site-footer .footer-contact button:hover {
   background-color: rgb(4, 31, 48);
+}
+
+.woocommerce-Price-amount {
+  color: rgb(17, 26, 13);
 }
 
 .front-page-pic {

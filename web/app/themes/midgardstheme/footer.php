@@ -2,12 +2,12 @@
 <footer>
         <div class="site-footer">
             <div class="footer-midgard">
-                <h5>Midgård</h5>
+                <h5>Midgårds</h5>
                 <span>Jugansbo 130</span>
                 <span>733 91 Sala</span>
             </div>
             <div class="footer-halsocenter">
-                <h5>Hälsocenter, Vedicart</h5>
+                <h5>Midgårds Hälsocenter, Vedicart</h5>
                 <span>Ingrid Lindberg</span>
                 <span>070-322 83 30</span>
                 <span><a href="mailto:Midgardshalsocenter@gmail.com">Midgardshalsocenter@gmail.com</a></span>
@@ -17,7 +17,7 @@
                 </div>
             </div>
             <div class="footer-byggteknik">
-                <h5>Byggteknik</h5>
+                <h5>Midgårds Byggteknik</h5>
                 <span>Thomas Lindberg</span>
                 <span>072-011 29 97</span>
                 <span><a href="mailto:Midgardsbyggteknik@gmail.com">Midgardsbyggteknik@gmail.com</a></span>

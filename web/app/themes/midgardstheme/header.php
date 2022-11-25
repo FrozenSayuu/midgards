@@ -13,7 +13,6 @@
     <div class="container">
         <header class="site-header">
             <div class="header-icon">
-            <a href="<?php echo home_url(); ?>"><img src="<?php site_icon_url(); ?>" alt="midgards door"></a>
                 <div class="header-title">
                     <h1><a href="<?php echo home_url(); ?>"><?php bloginfo( 'name' ); ?></a></h1>
                 </div>

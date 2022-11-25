@@ -15,7 +15,7 @@
 
 .header-title a, .header-title a:hover
 {
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
@@ -23,6 +23,7 @@
 {
     grid-row: 2;
     padding-top: 1rem;
+    color: white;
 }
 
 #menu-main
@@ -39,11 +40,11 @@
 #menu-main a
 {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 #menu-main a:hover
 {
     text-decoration: underline;
-    color: black;
+    color: #C0C0C0;
 }

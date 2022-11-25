@@ -7,10 +7,10 @@
                 <span>733 91 Sala</span>
             </div>
             <div class="footer-halsocenter">
-                <h5>Hälsocenter Vedicart</h5>
+                <h5>Hälsocenter, Vedicart</h5>
                 <span>Ingrid Lindberg</span>
                 <span>070-322 83 30</span>
-                <span>email</span>
+                <span><a href="mailto:Midgardshalsocenter@gmail.com">Midgardshalsocenter@gmail.com</a></span>
                 <div class="footer-social">
                 <a href="https://www.facebook.com/reikipamidgard"><img src="/app/uploads/social-icons/facebook-icon.png" alt="facebook icon" width="36px" height="36px"></a> 
                <a href="https://www.instagram.com/midgardshalsocenter/"><img src="/app/uploads/social-icons/instagram-icon.png" alt="instagram icon" width="36px" height="36px"></a>
@@ -20,7 +20,7 @@
                 <h5>Byggteknik</h5>
                 <span>Thomas Lindberg</span>
                 <span>072-011 29 97</span>
-                <span>email</span>
+                <span><a href="mailto:Midgardsbyggteknik@gmail.com">Midgardsbyggteknik@gmail.com</a></span>
                 <div class="footer-social">
                 <!-- <a href="#"><img src="/app/uploads/social-icons/facebook-icon.png" alt="facebook icon" width="36px" height="36px"></a>  -->
                 <a href="https://www.instagram.com/midgards_byggteknik/"><img src="/app/uploads/social-icons/instagram-icon.png" alt="instagram icon" width="36px" height="36px"></a>

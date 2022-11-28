@@ -1,0 +1,45 @@
+@import '../general/responsive';
+@import '../general/colors';
+
+.treatment-content {
+    margin: 2rem 0 2rem;
+
+    .treatment-info {
+        background-color: rgb(235, 235, 235);
+        padding: 1.5rem;
+    }
+
+    .treatment-title {
+        margin-top: 2rem;
+    }
+
+    .treatment-text {
+        margin-top: 1rem;
+
+        p {
+            margin-bottom: 3rem;
+        }
+    }
+    
+    .wp-block-button {
+        color: white;
+    }
+}
+
+@media (min-width: $tablet) {
+    .treatment-content {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        column-gap: 2rem;
+    
+
+        .treatment-image {
+            display: flex;
+            justify-content: center;
+        }
+
+        .treatment-title {
+            margin-top: 0;
+        }
+    }
+}

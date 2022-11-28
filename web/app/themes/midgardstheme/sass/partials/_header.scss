@@ -26,6 +26,36 @@
     color: white;
 }
 
+//submenu css
+.menu-main-container ul ul
+{
+    display: none;
+    position: absolute;
+    top: 3em;
+    left: 0;
+    z-index: 99999;
+    width: 180px;
+    background-color: rgb(58 58 58 / 89%);
+    list-style: none;
+    margin-top: -12px;
+}
+
+.menu-main-container ul li:hover > ul
+{
+    display: block;
+}
+
+.menu-main-container li
+{
+    position: relative;
+    margin: auto;
+}
+
+.menu-main-container .sub-menu
+{
+    margin:auto;
+}
+
 #menu-main
 {
     display: flex;

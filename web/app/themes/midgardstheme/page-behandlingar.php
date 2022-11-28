@@ -15,11 +15,15 @@ $result = new WP_Query($post_treatments_query); ?>
     </div>
     <div class="treatment-content">
         <div class="treatment-image">
-            <?php if (!empty(get_the_post_thumbnail())) { ?>
-                <?php the_post_thumbnail('midgards-gallery'); ?>
-            <?php } else { ?>
-                <img src="/app/uploads/placeholder_no_image.png" width="150" height="150" alt="placeholder for no image found">
-            <?php } ?>
+            <?php if ($result->have_posts()) : ?>
+                <?php while ($result->have_posts()) : $result->the_post(); ?>
+                    <?php if (!empty(get_the_post_thumbnail())) { ?>
+                        <?php the_post_thumbnail('midgards-gallery'); ?>
+                    <?php } else { ?>
+                        <img src="/app/uploads/placeholder_no_image.png" width="150" height="150" alt="placeholder for no image found">
+                    <?php } ?>
+                <?php endwhile; ?>
+            <?php endif; ?>
         </div>
         <div class="treatment-info">
             <?php if ($result->have_posts()) : ?>

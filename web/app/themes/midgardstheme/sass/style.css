@@ -36,15 +36,10 @@
 .menu-main-container li {
   position: relative;
   margin: auto;
-  padding: 0 1rem;
 }
 
 .menu-main-container a {
   padding: 12px;
-}
-
-.menu-main-container .sub-menu {
-  padding: 0;
 }
 
 #menu-main {

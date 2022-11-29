@@ -7,10 +7,32 @@
     .treatment-info {
         background-color: rgb(235, 235, 235);
         padding: 1.5rem;
+
+        .treatment-text {
+            margin: 3rem 0 2rem;
+        }
+
+        .treatment-title {
+            border-bottom: 2px solid black;
+            display: inline;
+            margin-top: 2rem;
+            padding-bottom: 0.4rem;
+        }
+
+        .wp-block-button {
+            margin-top: 2rem;
+        }
     }
 
-    .treatment-title {
-        margin-top: 2rem;
+    .treatment-image {
+        display: flex;
+        justify-content: center;
+
+        img {
+            border-radius: 100%;
+            width: 250px;
+            height: 250px;
+        }
     }
 
     .treatment-text {
@@ -28,18 +50,7 @@
 
 @media (min-width: $tablet) {
     .treatment-content {
-        display: grid;
-        grid-template-columns: 1fr 3fr;
-        column-gap: 2rem;
-    
-
-        .treatment-image {
-            display: flex;
-            justify-content: center;
+        display: flex;
+        gap: 2rem;
         }
-
-        .treatment-title {
-            margin-top: 0;
-        }
-    }
 }

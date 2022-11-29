@@ -244,8 +244,26 @@ body {
   background-color: rgb(235, 235, 235);
   padding: 1.5rem;
 }
-.treatment-content .treatment-title {
+.treatment-content .treatment-info .treatment-text {
+  margin: 3rem 0 2rem;
+}
+.treatment-content .treatment-info .treatment-title {
+  border-bottom: 2px solid black;
+  display: inline;
   margin-top: 2rem;
+  padding-bottom: 0.4rem;
+}
+.treatment-content .treatment-info .wp-block-button {
+  margin-top: 2rem;
+}
+.treatment-content .treatment-image {
+  display: flex;
+  justify-content: center;
+}
+.treatment-content .treatment-image img {
+  border-radius: 100%;
+  width: 250px;
+  height: 250px;
 }
 .treatment-content .treatment-text {
   margin-top: 1rem;
@@ -259,17 +277,8 @@ body {
 
 @media (min-width: 600px) {
   .treatment-content {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    -moz-column-gap: 2rem;
-         column-gap: 2rem;
-  }
-  .treatment-content .treatment-image {
     display: flex;
-    justify-content: center;
-  }
-  .treatment-content .treatment-title {
-    margin-top: 0;
+    gap: 2rem;
   }
 }
 .front-page-pic {

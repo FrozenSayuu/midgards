@@ -151,8 +151,10 @@ body {
   }
 }
 .contact-midgard {
-  margin: 0;
-  padding: 0 5rem;
+  margin-top: 1rem;
+  padding: 2rem 0 2rem 5rem;
+  border-radius: 5px;
+  background-color: #E9DCC9;
 }
 
 .single-post-content {
@@ -244,13 +246,18 @@ body {
 .about-us-content .wp-block-media-text .wp-block-media-text__content {
   margin: 2rem 0 2rem;
   padding: 0;
-  background-color: rgb(236, 228, 228);
+  background-color: #E9DCC9;
   padding: 2rem;
   border-radius: 5px;
   line-height: 1.5rem;
 }
+.about-us-content .wp-block-media-text .wp-block-media-text__media {
+  text-align: center;
+}
 .about-us-content .wp-block-media-text .wp-block-media-text__media img {
   border-radius: 5px;
+  height: 50%;
+  width: 50%;
 }
 
 @media (min-width: 600px) {
@@ -271,8 +278,7 @@ body {
 .frontpage-cont {
   text-decoration: none;
   background-color: rgba(58, 58, 58, 0.89);
-  color: black;
-  margin: auto;
+  margin: 1rem auto;
   padding: 1rem;
   width: 80ch;
   text-align: center;

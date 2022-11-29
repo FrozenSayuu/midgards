@@ -6,11 +6,6 @@
   padding-top: 1rem;
 }
 
-.header-icon img {
-  height: 200px;
-  width: 200px;
-}
-
 .header-title a, .header-title a:hover {
   color: white;
   text-decoration: none;
@@ -41,10 +36,15 @@
 .menu-main-container li {
   position: relative;
   margin: auto;
+  padding: 0 1rem;
+}
+
+.menu-main-container a {
+  padding: 12px;
 }
 
 .menu-main-container .sub-menu {
-  margin: auto;
+  padding: 0;
 }
 
 #menu-main {
@@ -55,6 +55,7 @@
   background-color: rgba(58, 58, 58, 0.89);
   height: 3rem;
   font-weight: 600;
+  margin: 0;
 }
 
 #menu-main a {
@@ -154,8 +155,9 @@ body {
     height: auto;
   }
 }
-.kontakt-socials {
-  color: white;
+.contact-midgard {
+  margin: 0;
+  padding: 0 5rem;
 }
 
 .single-post-content {

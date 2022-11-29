@@ -38,7 +38,7 @@ if (!function_exists('midgardstheme_setup')) :
             'admin-head-callback'    => '',
             'admin-preview-callback' => '',
         ];
-        add_theme_support( 'custom-background', $background_args );
+        add_theme_support('custom-background', $background_args);
 
         // Add theme support for Custom Header
         $header_args = [
@@ -64,7 +64,7 @@ if (!function_exists('midgardstheme_setup')) :
         // Add theme support for Translation
 
         add_image_size('midgards-gallery', '500', '300', true);
-    }
+        }
 
     add_action('after_setup_theme', 'midgardstheme_setup');
 
@@ -81,6 +81,31 @@ if (!function_exists('midgardstheme_setup')) :
         return 5;
     }
     add_filter('excerpt_length', 'mg_custom_excerpt_length', 999);
+
+
+    function mytheme_add_woocommerce_support() {
+        add_theme_support( 'woocommerce', array(
+
+            'thumbnail_image_width' => 300,
+            'thumbnail_image_height' => 150,
+            'single_image_width'    => 50,
+            'crop' => 0,
+
+            'product_grid' => array(
+                'default_rows' => 4,
+                'min_rows'        => 1,
+                'max_rows'        => 5,
+                'default_columns' => 3,
+                'min_columns'     => 1,
+                'max_columns'     => 4,
+        )));
+    }
+    add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
+
+    add_action( 'after_setup_theme', 'yourtheme_setup');
+    function yourtheme_setup() {
+        add_theme_support( 'wc-product-gallery-slider' );
+    }
 
 
 endif;

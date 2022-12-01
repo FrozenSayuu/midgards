@@ -14,10 +14,23 @@ reiki 1, reiki 2, reiki master -->
 <div class="courses-content">
     <?php if ($result->have_posts()) : ?>
         <?php while ($result->have_posts()) : $result->the_post() ?>
-            <h2 class="course-title"><?php the_title(); ?></h2>
-            <div class="course-info"><?php the_content(); ?></div>
+            <div class="course-single">
+                <div class="course-image">
+                    <?php if (!empty(get_the_post_thumbnail())) { ?>
+                        <?php the_post_thumbnail('midgards-gallery'); ?>
+                    <?php } else { ?>
+                        <img src="/app/uploads/placeholder_no_image.png" alt="placeholder for no image found">
+                    <?php } ?>
+                </div>
+                <div class="course-info">
+                    <h2 class="course-title"><?php the_title(); ?></h2>
+                    <div class="course-text"><?php the_content(); ?></div>
+                </div>
+
+            </div>
 
         <?php endwhile; ?>
+
     <?php endif; ?>
 </div>
 

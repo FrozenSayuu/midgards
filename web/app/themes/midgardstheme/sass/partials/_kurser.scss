@@ -1,0 +1,60 @@
+@import '../general/responsive';
+@import '../general/colors';
+
+.courses-content {
+     margin: 4rem 0;
+
+    .course-single {
+        display: flex;
+        flex-direction: column;
+        margin: 4rem 0 4rem;
+    }
+
+    .course-info {
+        padding: 1.5rem;
+        background-color: $white-grey;
+        color: black;
+
+        .course-title {
+            border-bottom: 2px solid black;
+            display: inline;
+        }
+
+        .course-text {
+            p {
+                margin: 1.5em 0;
+            }
+        }
+    }
+
+    .wp-block-button {
+        padding-top: 2rem;
+        color: $white-grey;
+    }
+} 
+
+.course-image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+
+img {
+    border-radius: 100%;
+    width: 250px;
+    height: 250px;
+    }
+}
+
+@media (min-width: $tablet) {
+
+    .courses-content {
+        .course-single {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .course-image {
+            margin-right: 1rem;
+       }
+    } 
+}

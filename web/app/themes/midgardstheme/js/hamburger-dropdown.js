@@ -11,11 +11,9 @@ function toggleDropdown() {
     dropdownItems.style.display = "none";
     open_dropdown_icon.style.display = "block";
     close_dropdown_icon.style.display = "none";
-    console.log("hej");
   } else {
     dropdownItems.style.display = "block";
     open_dropdown_icon.style.display = "none";
     close_dropdown_icon.style.display = "block";
-    console.log("hejdå");
   }
 }

@@ -5,64 +5,96 @@
   text-align: center;
   padding-top: 1rem;
 }
-
-.header-title a, .header-title a:hover {
+.site-header .header-title a, .site-header .header-title a:hover {
   color: white;
   text-decoration: none;
 }
-
-.menu-main-container {
+.site-header .menu-main-container {
   grid-row: 2;
   padding-top: 1rem;
   color: white;
 }
 
-.menu-main-container ul ul {
-  display: none;
-  position: absolute;
-  top: 3em;
-  left: 0;
-  z-index: 99999;
-  width: 180px;
-  background-color: rgba(58, 58, 58, 0.89);
-  list-style: none;
-  margin-top: -12px;
-}
-
-.menu-main-container ul li:hover > ul {
-  display: block;
-}
-
-.menu-main-container li {
-  position: relative;
-  margin: auto;
-}
-
-.menu-main-container a {
-  padding: 12px;
-}
-
-#menu-main {
+.mobile-container {
   display: flex;
-  list-style: none;
-  justify-content: space-evenly;
-  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  margin: auto;
   background-color: rgba(58, 58, 58, 0.89);
-  height: 3rem;
-  font-weight: 600;
-  margin: 0;
+  height: auto;
+  color: white;
+  padding: 0;
 }
-
-#menu-main a {
+.mobile-container .menu-item {
+  padding: 0.7rem;
+}
+.mobile-container .menu-item a {
   text-decoration: none;
   color: white;
 }
-
-#menu-main a:hover {
+.mobile-container .menu-item a:hover {
   text-decoration: underline;
   color: #C0C0C0;
 }
+.mobile-container ul {
+  list-style-type: none;
+}
 
+.mobile-container ul {
+  padding: 0;
+}
+
+@media (max-width: 900px) {
+  #menu-main {
+    display: none;
+  }
+}
+@media (min-width: 900px) {
+  .mobile-container {
+    display: none;
+  }
+  .menu-main-container ul ul {
+    display: none;
+    position: absolute;
+    top: 3em;
+    left: 0;
+    z-index: 99999;
+    width: 180px;
+    background-color: rgba(58, 58, 58, 0.89);
+    list-style: none;
+    margin-top: -12px;
+  }
+  .menu-main-container ul li:hover > ul {
+    display: block;
+  }
+  .menu-main-container li {
+    position: relative;
+    margin: auto;
+  }
+  .menu-main-container a {
+    padding: 12px;
+  }
+  #menu-main {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(58, 58, 58, 0.89);
+    height: 3rem;
+    font-weight: 600;
+    margin: 0;
+    padding: 0px;
+  }
+  #menu-main a {
+    text-decoration: none;
+    color: white;
+  }
+  #menu-main a:hover {
+    text-decoration: underline;
+    color: #C0C0C0;
+  }
+}
 body {
   background-color: rgb(130, 20, 20) !important;
 }
@@ -546,4 +578,5 @@ body {
   width: 80ch;
   text-align: center;
   color: white;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

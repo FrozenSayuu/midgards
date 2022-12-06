@@ -1,76 +1,119 @@
-.site-header
-{
+@import '../general/responsive';
+@import '../general/colors';
+
+.site-header {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 2fr 1fr;
     text-align: center;
     padding-top: 1rem;
+
+    .header-title a, .header-title a:hover {
+        color: white;
+        text-decoration: none;
+    }
+
+    .menu-main-container{
+        grid-row: 2;
+        padding-top: 1rem;
+        color: white;
+    }
 }
 
-.header-title a, .header-title a:hover
-{
-    color: white;
-    text-decoration: none;
-}
+//hamburger meny
 
-.menu-main-container
-{
-    grid-row: 2;
-    padding-top: 1rem;
-    color: white;
-}
-
-//submenu css
-.menu-main-container ul ul
-{
-    display: none;
-    position: absolute;
-    top: 3em;
-    left: 0;
-    z-index: 99999;
-    width: 180px;
-    background-color: rgb(58 58 58 / 89%);
-    list-style: none;
-    margin-top: -12px;
-}
-
-.menu-main-container ul li:hover > ul
-{
-    display: block;
-}
-
-.menu-main-container li
-{
-    position: relative;
-    margin: auto;
-}
-
-.menu-main-container a
-{
-    padding: 12px;
-}
-//end of submenu css
-
-#menu-main
-{
+.mobile-container {
     display: flex;
-    list-style: none;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: center;
+    text-align: center; 
+    width: 100%;
+    margin: auto;
     background-color: rgb(58 58 58 / 89%);
-    height: 3rem;
-    font-weight: 600;
-    margin: 0;
-}
-
-#menu-main a
-{
-    text-decoration: none;
+    height: auto;
     color: white;
+    padding: 0;
+    .menu-item {
+
+        padding: 0.7rem;
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+            color: #C0C0C0;
+        }
+    }
+
+    ul {
+        list-style-type: none;
+    }
+  }
+
+.mobile-container ul {
+    padding: 0;
 }
 
-#menu-main a:hover
-{
-    text-decoration: underline;
-    color: #C0C0C0;
+@media (max-width: $tablet-landscape) {
+    #menu-main {
+        display: none;
+    }
+
+}
+@media(min-width: $tablet-landscape) {
+    .mobile-container {
+        display: none;
+    }
+   
+//submenu css
+    .menu-main-container ul ul {
+        display: none;
+        position: absolute;
+        top: 3em;
+        left: 0;
+        z-index: 99999;
+        width: 180px;
+        background-color: rgb(58 58 58 / 89%);
+        list-style: none;
+        margin-top: -12px;
+    }
+
+    .menu-main-container ul li:hover > ul {
+        display: block;
+    }
+
+    .menu-main-container li {
+        position: relative;
+        margin: auto;
+    }
+
+    .menu-main-container a
+    {
+        padding: 12px;
+    }
+
+    #menu-main {
+        display: flex;
+        list-style: none;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: rgb(58 58 58 / 89%);
+        height: 3rem;
+        font-weight: 600;
+        margin: 0;
+        padding: 0px;
+    }
+
+    #menu-main a {
+        text-decoration: none;
+        color: white;
+
+        &:hover {
+            text-decoration: underline;
+            color: #C0C0C0;
+        }
+    }
+//end of submenu css
 }

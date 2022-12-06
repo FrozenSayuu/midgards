@@ -16,15 +16,28 @@
 }
 
 .mobile-container {
-  display: flex;
-  justify-content: center;
-  text-align: center;
   width: 100%;
   margin: auto;
   background-color: rgba(58, 58, 58, 0.89);
   height: auto;
   color: white;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.mobile-container .mobile-container-menu {
+  display: none;
+}
+.mobile-container .close-menu-icon {
+  display: none;
+}
+.mobile-container .menu-icons {
+  justify-content: end;
+  display: flex;
+  padding: 10px;
+}
+.mobile-container .menu-icons svg {
+  cursor: pointer;
 }
 .mobile-container .menu-item {
   padding: 0.7rem;

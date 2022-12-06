@@ -19,7 +19,21 @@
             </div>
             <?php wp_nav_menu(['theme_location' => 'primary', 'container' => 'nav']); ?>
 
-            <div class="mobile-container"><?php wp_nav_menu(['theme_location' => 'primary', 'container' => 'nav']); ?>
-                <i class="fa fa-bars"></i>
+            <div class="mobile-container">
+                <div class="menu-icons">
+                    <svg class="close-menu-icon" width="26" height="30" viewBox="0 0 30 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L29 33" stroke="black" stroke-width="2" />
+                        <path d="M1 33L29 1" stroke="black" stroke-width="2" />
+                    </svg>
+
+                    <svg class="open-menu-icon" width="32" height="30" viewBox="0 0 36 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line y1="1" x2="36" y2="1" stroke="black" stroke-width="2" />
+                        <line y1="29" x2="36" y2="29" stroke="black" stroke-width="2" />
+                        <line y1="15" x2="36" y2="15" stroke="black" stroke-width="2" />
+                    </svg>
+                </div>
+
+
+                <div class="mobile-container-menu"><?php wp_nav_menu(['theme_location' => 'primary', 'container' => 'nav']); ?></div>
             </div>
         </header>

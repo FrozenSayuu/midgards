@@ -14,8 +14,12 @@
         <header class="site-header">
             <div class="header-icon">
                 <div class="header-title">
-                    <h1><a href="<?php echo home_url(); ?>"><?php bloginfo( 'name' ); ?></a></h1>
+                    <h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
                 </div>
             </div>
             <?php wp_nav_menu(['theme_location' => 'primary', 'container' => 'nav']); ?>
+
+            <div class="mobile-container"><?php wp_nav_menu(['theme_location' => 'primary', 'container' => 'nav']); ?>
+                <i class="fa fa-bars"></i>
+            </div>
         </header>

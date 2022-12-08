@@ -5,9 +5,10 @@
   text-align: center;
   padding-top: 1rem;
 }
-.site-header .header-title a, .site-header .header-title a:hover {
+.site-header .header-title a {
   color: white;
   text-decoration: none;
+  font-weight: 700;
 }
 .site-header .menu-main-container {
   grid-row: 2;
@@ -229,23 +230,26 @@
 
 .site-footer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   background-color: rgb(72, 103, 123);
   justify-content: space-around;
-  padding: 20px 0 20px 0;
+  padding: 2rem;
   color: #d5d5d5;
 }
 .site-footer .footer-midgard {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  padding: 1.5rem 0;
 }
 .site-footer .footer-halsocenter, .site-footer .footer-byggteknik {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  padding: 1.5rem 0;
 }
-.site-footer .footer-halsocenter span, .site-footer .footer-byggteknik span {
+.site-footer .footer-halsocenter a, .site-footer .footer-byggteknik a {
+  text-decoration: none;
   color: #d5d5d5;
 }
 .site-footer .footer-social {
@@ -278,6 +282,12 @@
   background-color: rgb(4, 31, 48);
 }
 
+@media (min-width: 900px) {
+  .site-footer {
+    display: flex;
+    flex-direction: row;
+  }
+}
 .about-us-content {
   display: grid;
   grid-template-columns: 1fr;
@@ -399,23 +409,26 @@
 
 .site-footer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   background-color: rgb(72, 103, 123);
   justify-content: space-around;
-  padding: 20px 0 20px 0;
+  padding: 2rem;
   color: #d5d5d5;
 }
 .site-footer .footer-midgard {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  padding: 1.5rem 0;
 }
 .site-footer .footer-halsocenter, .site-footer .footer-byggteknik {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  padding: 1.5rem 0;
 }
-.site-footer .footer-halsocenter span, .site-footer .footer-byggteknik span {
+.site-footer .footer-halsocenter a, .site-footer .footer-byggteknik a {
+  text-decoration: none;
   color: #d5d5d5;
 }
 .site-footer .footer-social {
@@ -448,6 +461,12 @@
   background-color: rgb(4, 31, 48);
 }
 
+@media (min-width: 900px) {
+  .site-footer {
+    display: flex;
+    flex-direction: row;
+  }
+}
 .about-us-content {
   display: grid;
   grid-template-columns: 1fr;

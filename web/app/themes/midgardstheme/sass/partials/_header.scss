@@ -8,10 +8,13 @@
     text-align: center;
     padding-top: 1rem;
 
-    .header-title a, .header-title a:hover {
+    .header-title a{
         color: white;
         text-decoration: none;
+        font-weight: 700;
     }
+
+    
 
     .menu-main-container{
         grid-row: 2;
@@ -23,9 +26,6 @@
 //hamburger meny
 
 .mobile-container {
-    // display: flex;
-    // justify-content: center;
-    // text-align: center; 
     width: 100%;
     margin: auto;
     background-color: rgb(58 58 58 / 89%);

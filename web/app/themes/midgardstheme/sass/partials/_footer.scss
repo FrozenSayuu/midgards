@@ -4,7 +4,7 @@
     background-color: rgba(72, 103, 123, 1);
     justify-content: space-around;
     padding: 20px 0 20px 0;
-    color: #d5d5d5; 
+    color: #e9e8e8; 
 
     .footer-midgard {
       display: flex;
@@ -19,7 +19,16 @@
       justify-content: space-evenly;
 
       span {
-        color: #d5d5d5; 
+        color: #e9e8e8; 
+
+        a{
+            color:#e9e8e8;
+        }
+
+        a:hover {
+            color:lightgreen;
+            text-decoration: none;
+        }
       }
     }
 

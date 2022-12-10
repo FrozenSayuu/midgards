@@ -18,4 +18,4 @@
         <span class="card-date"> <?php echo get_the_date('Y-m-d'); ?></span>
     </div>
 </div>
-<?php wp_footer(); ?>
+<?php get_footer(); ?>

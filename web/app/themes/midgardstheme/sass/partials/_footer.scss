@@ -1,22 +1,24 @@
 .site-footer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background-color: rgba(72, 103, 123, 1);
     justify-content: space-around;
-    padding: 20px 0 20px 0;
-    color: #e9e8e8; 
+    padding: 2rem;
+    color: #d5d5d5; 
 
     .footer-midgard {
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
+      padding: 1.5rem 0;
 
     }
 
-    .footer-halsocenter ,   .footer-byggteknik{
+    .footer-halsocenter,   .footer-byggteknik{
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
+      padding: 1.5rem 0;
 
       span {
         color: #e9e8e8; 
@@ -42,6 +44,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        width: fit-content;
 
         button {
             border-radius: 10px;
@@ -67,5 +70,13 @@
         }
     }
 
+
+}
+
+@media (min-width: $tablet-landscape) {
+    .site-footer {
+        display: flex;
+        flex-direction: row;
+    }
 
 }

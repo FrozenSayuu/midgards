@@ -1,0 +1,57 @@
+@import '../general/responsive';
+@import '../general/colors';
+
+.treatment-content {
+    margin: 2rem 0 2rem;
+
+    .treatment-info {
+        background-color: #E9DCC9;
+        padding: 1.5rem;
+        border-radius: 5px;
+
+        .treatment-text {
+            margin: 3rem 0 2rem;
+        }
+
+        .treatment-title {
+            border-bottom: 2px solid black;
+            display: inline;
+            margin-top: 2rem;
+            padding-bottom: 0.4rem;
+        }
+
+        .wp-block-button {
+            margin-top: 2rem;
+        }
+    }
+
+    .treatment-image {
+        display: flex;
+        justify-content: center;
+
+        img {
+            border-radius: 100%;
+            width: 250px;
+            height: 250px;
+        }
+    }
+
+    .treatment-text {
+        margin-top: 1rem;
+
+        p {
+            margin-bottom: 3rem;
+        }
+    }
+    
+    .wp-block-button {
+        color: white;
+    }
+}
+
+@media (min-width: $tablet) {
+    .treatment-content {
+        display: flex;
+        gap: 2rem;
+        }
+}

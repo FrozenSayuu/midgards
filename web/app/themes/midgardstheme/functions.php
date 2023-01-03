@@ -83,7 +83,8 @@ if (!function_exists('midgardstheme_setup')) :
     add_filter('excerpt_length', 'mg_custom_excerpt_length', 999);
 
 
-    function mytheme_add_woocommerce_support() {
+    function mytheme_add_woocommerce_support()
+    {
         add_theme_support( 'woocommerce', array(
 
             'thumbnail_image_width' => 300,
@@ -100,10 +101,12 @@ if (!function_exists('midgardstheme_setup')) :
                 'max_columns'     => 4,
         )));
     }
+
     add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
 
     add_action( 'after_setup_theme', 'yourtheme_setup');
-    function yourtheme_setup() {
+    function yourtheme_setup()
+    {
         add_theme_support( 'wc-product-gallery-slider' );
     }
 

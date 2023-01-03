@@ -22,12 +22,10 @@
             <span>072-011 29 97</span>
             <span><a href="mailto:Midgardsbyggteknik@gmail.com">Midgardsbyggteknik@gmail.com</a></span>
             <div class="footer-social">
-                <!-- <a href="#"><img src="/app/uploads/social-icons/facebook-icon.png" alt="facebook icon" width="36px" height="36px"></a>  -->
                 <a href="https://www.instagram.com/midgards_byggteknik/"><img src="/app/uploads/social-icons/instagram-icon.png" alt="instagram icon" width="36px" height="36px"></a>
             </div>
         </div>
         <div class="footer-contact">
-            <!-- <a href="#"><button><span>Kontakta oss</span></button></a> -->
             <button> <?php wp_nav_menu(['theme_location' => 'footer', 'container' => 'footer']); ?></button>
         </div>
     </div>

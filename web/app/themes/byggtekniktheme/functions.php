@@ -1,6 +1,6 @@
 <?php
 
-if (!function_exists('midgardstheme_setup')) :
+if (!function_exists('byggtekniktheme_setup')) :
     /**
      * Sets up theme defaults and registers support for various WordPress features
      *
@@ -9,11 +9,11 @@ if (!function_exists('midgardstheme_setup')) :
      *
      *  @since MidgardsTheme 1.0.0
      */
-    function midgardstheme_setup()
+    function byggtekniktheme_setup()
     {
         register_nav_menus(array(
-            'primary'   => __('Primary Menu', 'midgardstheme'),
-            'footer' => __('Footer Menu', 'midgardstheme')
+            'primary'   => __('Primary Menu', 'byggtekniktheme'),
+            'footer' => __('Footer Menu', 'byggtekniktheme')
         ));
 
         add_theme_support('post-formats', [
@@ -81,7 +81,7 @@ if (!function_exists('midgardstheme_setup')) :
         add_image_size('midgards-gallery', '500', '300', true);
         }
 
-    add_action('after_setup_theme', 'midgardstheme_setup');
+    add_action('after_setup_theme', 'byggtekniktheme_setup');
 
     // Loads in all the stylesheets and scripts
     function add_theme_scripts()

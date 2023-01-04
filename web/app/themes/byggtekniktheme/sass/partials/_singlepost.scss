@@ -1,0 +1,38 @@
+.single-post-content
+{
+    display: flex;
+    flex-direction: column;
+    margin: 5rem;
+
+    .single-post-text
+    {
+        background-color: rgba(11, 44, 65, 1) ;
+        color: rgb(226, 226, 226);
+        margin-top: 3rem;
+        padding: 2rem;
+        line-height: 1.6rem;
+    }
+
+    .single-post-title
+    {
+        padding-bottom: 0.5rem;
+        border-bottom: solid; 
+        display: inline;
+    }
+
+    .single-post-description
+    {
+        margin: 2rem 0 2rem;
+    }
+
+    .single-post-image
+    {
+        
+        img 
+        {
+            width: 100%;
+            height: auto;
+            border: solid 3px rgba(11, 44, 65, 1);
+        }
+    }
+}

@@ -10,7 +10,7 @@
             <h5>Midgårds Hälsocenter, Vedicart</h5>
             <span>Ingrid Lindberg</span>
             <span>070-322 83 30</span>
-            <span><a href="mailto:Midgardshalsocenter@gmail.com">Midgardshalsocenter@gmail.com</a></span>
+            <span><a href="mailto:midgardshalsocenter@gmail.com">Midgardshalsocenter@gmail.com</a></span>
             <div class="footer-social">
                 <a href="https://www.facebook.com/reikipamidgard"><img src="/app/uploads/social-icons/facebook-icon.png" alt="facebook icon" width="36px" height="36px"></a>
                 <a href="https://www.instagram.com/midgardshalsocenter/"><img src="/app/uploads/social-icons/instagram-icon.png" alt="instagram icon" width="36px" height="36px"></a>
@@ -20,13 +20,17 @@
             <h5>Midgårds Byggteknik</h5>
             <span>Thomas Lindberg</span>
             <span>072-011 29 97</span>
-            <span><a href="mailto:Midgardsbyggteknik@gmail.com">Midgardsbyggteknik@gmail.com</a></span>
+            <span><a href="mailto:midgardsbyggteknik@gmail.com">Midgardsbyggteknik@gmail.com</a></span>
             <div class="footer-social">
                 <a href="https://www.instagram.com/midgards_byggteknik/"><img src="/app/uploads/social-icons/instagram-icon.png" alt="instagram icon" width="36px" height="36px"></a>
             </div>
         </div>
         <div class="footer-contact">
             <button> <?php wp_nav_menu(['theme_location' => 'footer', 'container' => 'footer']); ?></button>
+        </div>
+        <div class="privacy-policy">
+            <p><a href="../privacy-policy">Privacy Policy</a></p>
+            <p>Made by Tova Folkesson, 2023</p>
         </div>
     </div>
 </footer>

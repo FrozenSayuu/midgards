@@ -10,7 +10,6 @@ $result = new WP_Query($post_query); ?>
 <?php get_header(); ?>
 
 <div class="news-content">
-    <h1 class="news-heading">Blogg</h1>
     <div class="news-grid">
 
         <?php if ($result->have_posts()) : ?>

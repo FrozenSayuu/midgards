@@ -55,6 +55,21 @@ if (!function_exists('midgardstheme_setup')) :
         ];
         add_theme_support('custom-header', $header_args);
 
+        // Add theme support for Custom Footer
+        $footer_args = [
+            'default-image'      => '',
+            'width'              => 0,
+            'height'             => 0,
+            'flex-width'         => true,
+            'flex-height'        => true,
+            'uploads'            => true,
+            'random-default'     => false,
+            'header-text'        => true,
+            'default-text-color' => 'OOOO',
+            'video'              => true,
+        ];
+        add_theme_support('custom-footer', $footer_args);
+
         // Add theme support for HTML5 Semantic Markup
         add_theme_support('html5', ['search-form', 'comment-form', 'comment-list', 'gallery', 'caption']);
 
@@ -83,7 +98,8 @@ if (!function_exists('midgardstheme_setup')) :
     add_filter('excerpt_length', 'mg_custom_excerpt_length', 999);
 
 
-    function mytheme_add_woocommerce_support() {
+    function mytheme_add_woocommerce_support()
+    {
         add_theme_support( 'woocommerce', array(
 
             'thumbnail_image_width' => 300,
@@ -100,10 +116,12 @@ if (!function_exists('midgardstheme_setup')) :
                 'max_columns'     => 4,
         )));
     }
+
     add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
 
     add_action( 'after_setup_theme', 'yourtheme_setup');
-    function yourtheme_setup() {
+    function yourtheme_setup()
+    {
         add_theme_support( 'wc-product-gallery-slider' );
     }
 

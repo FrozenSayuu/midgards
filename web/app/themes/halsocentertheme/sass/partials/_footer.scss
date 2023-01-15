@@ -1,0 +1,102 @@
+.site-footer
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 2fr 1fr;
+    justify-items: center;
+    background-color: rgba(72, 103, 123, 1);
+    padding: 2rem;
+    color: #d5d5d5;
+
+    .footer-midgard
+    {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      padding: 1.5rem 0;
+    }
+
+    .footer-halsocenter, .footer-byggteknik
+    {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      padding: 1.5rem 0;
+
+      span
+      {
+        color: #e9e8e8; 
+
+        a
+        {
+            color:#e9e8e8;
+        }
+
+        a:hover
+        {
+            color:lightgreen;
+            text-decoration: none;
+        }
+      }
+    }
+
+    .footer-social
+    {
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px;
+    }
+
+    .footer-contact
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: fit-content;
+
+        button
+        {
+            border-radius: 10px;
+            border-style: none;
+            background-color: rgba(21, 94, 140, 1);
+            padding: 10px 15px;
+            outline: none;
+
+            a
+            {
+                color: #d5d5d5; 
+                text-decoration: none;
+            }
+
+            ul
+            {
+                list-style-type: none;
+                padding: 0;
+                margin: auto;
+            }
+        }
+
+        button:hover
+        {
+            background-color: rgb(4, 31, 48);
+        }
+    }
+
+    .privacy-policy p a
+    {
+        text-decoration: none;
+        color:#e9e8e8;
+    }
+
+}
+
+@media (min-width: $tablet-landscape)
+{
+    .site-footer 
+    {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 2fr 1fr;
+    }
+
+}
